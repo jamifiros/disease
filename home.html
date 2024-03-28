@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />   <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="head">
+        <h2>SkinPredict</h2>
+        <button><a href="login.html">Logout</a></button>
+    </div>
+<div class="file-upload">
+  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+  <div class="image-upload-wrap">
+    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+    <div class="drag-text">
+      <h3>Drag and drop a file or select add Image</h3>
+    </div>
+  </div>
+  <form action="#">
+    <div class="file-upload-content">
+        <img class="file-upload-image" src="#" alt="your image" />
+        <div class="image-title-wrap">
+          <button type="submit" class="remove-image sbmt">Upload</button>
+          <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+        </div>
+      </div>
+  </form>
+</div>
+<div class="prediction-result">
+    <h2>Prediction Result</h2>
+    <div class="result-details">
+        <p><strong>Predicted Disease:</strong> Psoriasis</p>
+        <p><strong>Probability of Disease:</strong> 85%</p>
+
+    </div>
+    
+    <div class="disclaimer">
+        <p>Note: This prediction is for informational purposes only. Always consult a healthcare professional for accurate diagnosis and treatment.</p>
+    </div>
+</div>
+
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
